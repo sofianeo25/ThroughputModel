@@ -1,0 +1,4 @@
+pyuic5 -o ui_main.py -x main.ui
+
+pyside6-uic main.ui -o ui_main.py
+
