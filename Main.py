@@ -27,6 +27,9 @@ class Main(QMainWindow, Ui_MainWindow):
         # intercepter signal quand slide sur les boutons slider
         self.mu_slider.valueChanged.connect(self.mu_slider_value_changed)
         self.su_slider.valueChanged.connect(self.su_slider_value_changed)
+        # intercepter signal quand on change les valeurs de lineEdit_affichage_mu et lineEdit_affichage_su
+        self.lineEdit_affichage_mu.textChanged.connect(self.mu_lineEdit_value_changed)
+        self.lineEdit_affichage_su.textChanged.connect(self.su_lineEdit_value_changed)
 
         # intercepter le changement du standard dans le cas ou on doit cacher le spacer
         self.comboBox_standard_selection.currentTextChanged.connect(self.hide_spacer)
@@ -143,13 +146,17 @@ class Main(QMainWindow, Ui_MainWindow):
             self.Header.show()
             self.groupbox_modulation.show()
             self.groupbox_ctrl_modulation.show()
-            self.groupBox_sgi_btn.show()
+            self.groupbox_sgi.show()
             self.groupbox_wifi_n.show()
 
             for groupbox_wifi_n in self.groupbox_wifi_n.findChildren(QGroupBox):
                 groupbox_wifi_n.show()
+
             if groupbox.objectName() != "Header" and "groupbox_modulation" and "groupbox_ctrl_modulation" and "groupBox_sgi_btn" and "groupbox_wifi_n":
                 groupbox.hide()
+
+            self.groupBox_sgi_dl.hide()
+            self.groupBox_sgi_ul.hide()
 
     def showMac80211n(self):
         """Show the MAC groupbox menu for 802.11n"""
@@ -202,7 +209,8 @@ class Main(QMainWindow, Ui_MainWindow):
         for groupbox in self.findChildren(QGroupBox):
             groupbox.show()
 
-        self.groupbox_sgi_dl_ul.hide()
+        self.groupBox_sgi_dl.hide()
+        self.groupBox_sgi_ul.hide()
 
         self.groupBox_number_of_csi.hide()
         self.groupBox_number_of_ss_for_CSI.hide()
@@ -221,7 +229,12 @@ class Main(QMainWindow, Ui_MainWindow):
     def changeGroupbox(self):
         """Hide or show the groupbox depending on the standard selected"""
         text, list_of_standard = self.getStandardSelection()
-
+        #Choose wifi standard
+        if text == list_of_standard[0]:
+            #hide all groupbox except header
+            for groupbox in self.findChildren(QGroupBox):
+                if groupbox.objectName() != "Header":
+                    groupbox.hide()
         # Wi-Fi a
         if text == list_of_standard[1]:
             self.getTroughputAB()
@@ -254,11 +267,11 @@ class Main(QMainWindow, Ui_MainWindow):
     def showSGI(self):
         """Show the SGI menu when standard is wifi ax"""
         if self.pushButton_sgi.isChecked():
-            text = self.comboBox_standard_selection.currentText()
-            if text == "802.11ax":
-                self.groupbox_sgi_dl_ul.show()
+            self.groupBox_sgi_dl.show()
+            self.groupBox_sgi_ul.show()
         else:
-            self.groupbox_sgi_dl_ul.hide()
+            self.groupBox_sgi_dl.hide()
+            self.groupBox_sgi_ul.hide()
 
     def showCSI(self):
         """Show the CSI menu when standard is wifi ax"""
@@ -282,6 +295,18 @@ class Main(QMainWindow, Ui_MainWindow):
         su_value = self.su_slider.value()
         su_value = su_value
         self.lineEdit_affichage_su.setText(str(su_value))
+
+    def mu_lineEdit_value_changed(self):
+        """Get the value of the lineEdit and display it in the slider"""
+        mu_value = self.lineEdit_affichage_mu.text()
+        mu_value = int(mu_value)
+        self.mu_slider.setValue(mu_value)
+
+    def su_lineEdit_value_changed(self):
+        """Get the value of the lineEdit and display it in the slider"""
+        su_value = self.lineEdit_affichage_su.text()
+        su_value = int(su_value)
+        self.su_slider.setValue(su_value)
 
     def hide_spacer(self):
         """Hide or show spacer depending """

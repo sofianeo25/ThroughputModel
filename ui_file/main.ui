@@ -61,16 +61,16 @@
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <property name="leftMargin">
-            <number>1</number>
+            <number>6</number>
            </property>
            <property name="topMargin">
-            <number>1</number>
+            <number>6</number>
            </property>
            <property name="rightMargin">
-            <number>0</number>
+            <number>6</number>
            </property>
            <property name="bottomMargin">
-            <number>0</number>
+            <number>6</number>
            </property>
            <item row="1" column="0" colspan="3">
             <widget class="QGroupBox" name="Header">
@@ -91,44 +91,44 @@
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_6">
               <property name="leftMargin">
-               <number>1</number>
+               <number>6</number>
               </property>
               <property name="topMargin">
-               <number>1</number>
+               <number>6</number>
               </property>
               <property name="rightMargin">
-               <number>0</number>
+               <number>6</number>
               </property>
               <property name="bottomMargin">
-               <number>0</number>
+               <number>6</number>
               </property>
               <item>
                <layout class="QHBoxLayout" name="layout_menu_principal">
                 <property name="leftMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="topMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="rightMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <item>
                  <layout class="QHBoxLayout" name="standard_selection">
                   <property name="leftMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="topMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <property name="bottomMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item alignment="Qt::AlignHCenter">
                    <widget class="QLabel" name="standard_selection_label">
@@ -190,16 +190,16 @@
                 <item>
                  <layout class="QHBoxLayout" name="frequency_band">
                   <property name="leftMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="topMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <property name="bottomMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item alignment="Qt::AlignHCenter">
                    <widget class="QLabel" name="label_frequency_band">
@@ -246,16 +246,16 @@
                 <item>
                  <layout class="QHBoxLayout" name="bandwidth">
                   <property name="leftMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="topMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <property name="bottomMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item alignment="Qt::AlignHCenter">
                    <widget class="QLabel" name="bandwidth_label">
@@ -311,20 +311,32 @@
            </item>
            <item row="2" column="2" rowspan="2">
             <layout class="QVBoxLayout" name="vertical_right">
+             <property name="leftMargin">
+              <number>6</number>
+             </property>
+             <property name="topMargin">
+              <number>6</number>
+             </property>
+             <property name="rightMargin">
+              <number>6</number>
+             </property>
+             <property name="bottomMargin">
+              <number>6</number>
+             </property>
              <item>
               <widget class="QGroupBox" name="vertical_3">
                <layout class="QVBoxLayout" name="vertical_trois">
                 <property name="leftMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="topMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="rightMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <item>
                  <widget class="QGroupBox" name="groupbox_dcm">
@@ -334,18 +346,21 @@
                     <height>50</height>
                    </size>
                   </property>
+                  <property name="flat">
+                   <bool>false</bool>
+                  </property>
                   <layout class="QHBoxLayout" name="DCM">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="label_dcm">
@@ -361,6 +376,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="text">
                       <string>OFF</string>
@@ -386,16 +413,16 @@
                   </property>
                   <layout class="QHBoxLayout" name="NRU">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="label_nru">
@@ -406,6 +433,18 @@
                    </item>
                    <item>
                     <widget class="QComboBox" name="comboBox_nru">
+                     <property name="minimumSize">
+                      <size>
+                       <width>80</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
                      <property name="currentIndex">
                       <number>1</number>
                      </property>
@@ -434,16 +473,16 @@
                   </property>
                   <layout class="QHBoxLayout" name="MU_MIMO">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="label_mu_mimo">
@@ -459,6 +498,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="text">
                       <string>OFF</string>
@@ -484,16 +535,16 @@
                   </property>
                   <layout class="QHBoxLayout" name="OFDMA">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="ofdma_label">
@@ -509,6 +560,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="text">
                       <string>OFF</string>
@@ -534,16 +597,16 @@
                   </property>
                   <layout class="QHBoxLayout" name="horizontalLayout_2">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="angle_quantif_label">
@@ -559,6 +622,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>62</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="minimum">
                       <number>1</number>
@@ -578,6 +653,18 @@
            </item>
            <item row="2" column="0" rowspan="2">
             <layout class="QVBoxLayout" name="vertical_left">
+             <property name="leftMargin">
+              <number>6</number>
+             </property>
+             <property name="topMargin">
+              <number>6</number>
+             </property>
+             <property name="rightMargin">
+              <number>6</number>
+             </property>
+             <property name="bottomMargin">
+              <number>6</number>
+             </property>
              <item>
               <widget class="QGroupBox" name="groupbox_modulation">
                <property name="sizePolicy">
@@ -589,27 +676,27 @@
                <property name="minimumSize">
                 <size>
                  <width>0</width>
-                 <height>110</height>
+                 <height>0</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
-                 <height>167</height>
+                 <height>50</height>
                 </size>
                </property>
                <layout class="QHBoxLayout" name="choice_modulation_2">
                 <property name="leftMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="topMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="rightMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <item>
                  <widget class="QLabel" name="choice_of_modulation_label">
@@ -620,6 +707,18 @@
                 </item>
                 <item>
                  <widget class="QComboBox" name="combobox_choice_modulation">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
                   <property name="currentIndex">
                    <number>7</number>
                   </property>
@@ -689,21 +788,21 @@
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
-                 <height>16777215</height>
+                 <height>50</height>
                 </size>
                </property>
                <layout class="QHBoxLayout" name="horizontalLayout_3">
                 <property name="leftMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="topMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="rightMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <item>
                  <widget class="QLabel" name="label_ctrl_modulation">
@@ -714,6 +813,18 @@
                 </item>
                 <item>
                  <widget class="QComboBox" name="comboBox_ctrl_modulation">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
                   <property name="currentIndex">
                    <number>4</number>
                   </property>
@@ -763,196 +874,19 @@
               </widget>
              </item>
              <item>
-              <widget class="QGroupBox" name="groupBox_sgi_btn">
-               <property name="title">
-                <string/>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <property name="leftMargin">
-                 <number>1</number>
-                </property>
-                <property name="topMargin">
-                 <number>1</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QLabel" name="label_sgi">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="text">
-                   <string>SGI (short guard interval)</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-                 <widget class="QPushButton" name="pushButton_sgi">
-                  <property name="maximumSize">
-                   <size>
-                    <width>60</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>OFF</string>
-                  </property>
-                  <property name="checkable">
-                   <bool>true</bool>
-                  </property>
-                  <property name="checked">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QGroupBox" name="groupbox_sgi_dl_ul">
-               <property name="alignment">
-                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-               </property>
-               <layout class="QGridLayout" name="SGI_2">
-                <property name="leftMargin">
-                 <number>1</number>
-                </property>
-                <property name="topMargin">
-                 <number>1</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item row="3" column="0">
-                 <widget class="QGroupBox" name="groupBox_sgi_ul">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <layout class="QHBoxLayout" name="groupBox">
-                   <property name="leftMargin">
-                    <number>1</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>1</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>0</number>
-                   </property>
-                   <item>
-                    <widget class="QLabel" name="label_18">
-                     <property name="text">
-                      <string>SGI in UL :</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QComboBox" name="comboBox_sgi_ul">
-                     <item>
-                      <property name="text">
-                       <string>0.8</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>1.6</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>3.2</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="QGroupBox" name="groupBox_sgi_dl">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <layout class="QHBoxLayout" name="SGI_DL_2">
-                   <property name="leftMargin">
-                    <number>1</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>1</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>0</number>
-                   </property>
-                   <item>
-                    <widget class="QLabel" name="label_16">
-                     <property name="text">
-                      <string>SGI in DL :</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QComboBox" name="comboBox_sgi_dl">
-                     <item>
-                      <property name="text">
-                       <string>0.8</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>1.6</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>3.2</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
               <widget class="QGroupBox" name="groupbox_wifi_n">
                <layout class="QGridLayout" name="gridLayout_3">
                 <property name="leftMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="topMargin">
-                 <number>1</number>
+                 <number>6</number>
                 </property>
                 <property name="rightMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <property name="bottomMargin">
-                 <number>0</number>
+                 <number>6</number>
                 </property>
                 <item row="2" column="0">
                  <widget class="QGroupBox" name="groupBox_stbc">
@@ -962,18 +896,21 @@
                     <height>50</height>
                    </size>
                   </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
                   <layout class="QHBoxLayout" name="STBC">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="label_stbc">
@@ -989,6 +926,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="text">
                       <string>OFF</string>
@@ -1012,18 +961,21 @@
                     <height>50</height>
                    </size>
                   </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
                   <layout class="QHBoxLayout" name="LDPC">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="label_ldpc">
@@ -1039,6 +991,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>70</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="text">
                       <string>OFF</string>
@@ -1062,18 +1026,21 @@
                     <height>50</height>
                    </size>
                   </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
                   <layout class="QHBoxLayout" name="groupBox_nb_ss">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QLabel" name="label_nb_ss">
@@ -1089,6 +1056,18 @@
                        <horstretch>0</horstretch>
                        <verstretch>0</verstretch>
                       </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>80</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>70</width>
+                       <height>16777215</height>
+                      </size>
                      </property>
                      <property name="currentIndex">
                       <number>1</number>
@@ -1122,16 +1101,16 @@
                  <widget class="QGroupBox" name="groupbox_wifi_n_2">
                   <layout class="QVBoxLayout" name="verticalLayout_2">
                    <property name="leftMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="topMargin">
-                    <number>1</number>
+                    <number>6</number>
                    </property>
                    <property name="rightMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <property name="bottomMargin">
-                    <number>0</number>
+                    <number>6</number>
                    </property>
                    <item>
                     <widget class="QGroupBox" name="groupBox_greenfield">
@@ -1141,21 +1120,24 @@
                        <height>50</height>
                       </size>
                      </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
                      <layout class="QHBoxLayout" name="greenfield">
                       <property name="sizeConstraint">
                        <enum>QLayout::SetMinimumSize</enum>
                       </property>
                       <property name="leftMargin">
-                       <number>1</number>
+                       <number>6</number>
                       </property>
                       <property name="topMargin">
-                       <number>1</number>
+                       <number>6</number>
                       </property>
                       <property name="rightMargin">
-                       <number>0</number>
+                       <number>6</number>
                       </property>
                       <property name="bottomMargin">
-                       <number>0</number>
+                       <number>6</number>
                       </property>
                       <item>
                        <widget class="QLabel" name="label_greenfield">
@@ -1177,6 +1159,18 @@
                           <horstretch>0</horstretch>
                           <verstretch>0</verstretch>
                          </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>70</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
                         </property>
                         <property name="text">
                          <string>OFF</string>
@@ -1200,21 +1194,24 @@
                        <height>50</height>
                       </size>
                      </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
                      <layout class="QHBoxLayout" name="control_preamble">
                       <property name="sizeConstraint">
                        <enum>QLayout::SetMinimumSize</enum>
                       </property>
                       <property name="leftMargin">
-                       <number>1</number>
+                       <number>6</number>
                       </property>
                       <property name="topMargin">
-                       <number>1</number>
+                       <number>6</number>
                       </property>
                       <property name="rightMargin">
-                       <number>0</number>
+                       <number>6</number>
                       </property>
                       <property name="bottomMargin">
-                       <number>0</number>
+                       <number>6</number>
                       </property>
                       <item>
                        <widget class="QLabel" name="label_control_preamble">
@@ -1230,6 +1227,18 @@
                           <horstretch>0</horstretch>
                           <verstretch>0</verstretch>
                          </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>70</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
                         </property>
                         <property name="text">
                          <string>OFF</string>
@@ -1253,21 +1262,24 @@
                        <height>50</height>
                       </size>
                      </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
                      <layout class="QHBoxLayout" name="txop">
                       <property name="sizeConstraint">
                        <enum>QLayout::SetMinimumSize</enum>
                       </property>
                       <property name="leftMargin">
-                       <number>1</number>
+                       <number>6</number>
                       </property>
                       <property name="topMargin">
-                       <number>1</number>
+                       <number>6</number>
                       </property>
                       <property name="rightMargin">
-                       <number>0</number>
+                       <number>6</number>
                       </property>
                       <property name="bottomMargin">
-                       <number>0</number>
+                       <number>6</number>
                       </property>
                       <item>
                        <widget class="QLabel" name="label_txop">
@@ -1283,6 +1295,18 @@
                           <horstretch>0</horstretch>
                           <verstretch>0</verstretch>
                          </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>70</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
                         </property>
                         <property name="text">
                          <string>OFF</string>
@@ -1301,6 +1325,220 @@
                   </layout>
                  </widget>
                 </item>
+                <item row="5" column="0">
+                 <widget class="QGroupBox" name="groupbox_sgi">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>200</height>
+                   </size>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <property name="leftMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>6</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="sgi">
+                     <property name="leftMargin">
+                      <number>6</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>6</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>6</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>6</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_sgi">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="text">
+                        <string>SGI (short guard interval)</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_sgi">
+                       <property name="minimumSize">
+                        <size>
+                         <width>70</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>70</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>OFF</string>
+                       </property>
+                       <property name="checkable">
+                        <bool>true</bool>
+                       </property>
+                       <property name="checked">
+                        <bool>false</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_sgi_dl">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
+                     <layout class="QHBoxLayout" name="SGI_DL_2">
+                      <property name="leftMargin">
+                       <number>6</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>6</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>6</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>6</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label_16">
+                        <property name="text">
+                         <string>SGI in DL :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="comboBox_sgi_dl">
+                        <property name="minimumSize">
+                         <size>
+                          <width>80</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>0.8</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>1.6</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>3.2</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_sgi_ul">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="flat">
+                      <bool>true</bool>
+                     </property>
+                     <layout class="QHBoxLayout" name="groupBox">
+                      <property name="leftMargin">
+                       <number>6</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>6</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>6</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>6</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label_18">
+                        <property name="text">
+                         <string>SGI in UL :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="comboBox_sgi_ul">
+                        <property name="minimumSize">
+                         <size>
+                          <width>80</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>70</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>0.8</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>1.6</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>3.2</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -1308,19 +1546,31 @@
            </item>
            <item row="2" column="1" rowspan="2">
             <layout class="QVBoxLayout" name="vertical_center">
+             <property name="leftMargin">
+              <number>6</number>
+             </property>
+             <property name="topMargin">
+              <number>6</number>
+             </property>
+             <property name="rightMargin">
+              <number>6</number>
+             </property>
+             <property name="bottomMargin">
+              <number>6</number>
+             </property>
              <item>
               <layout class="QVBoxLayout" name="other_parameters_802_11_n_2">
                <property name="leftMargin">
-                <number>1</number>
+                <number>6</number>
                </property>
                <property name="topMargin">
-                <number>1</number>
+                <number>6</number>
                </property>
                <property name="rightMargin">
-                <number>0</number>
+                <number>6</number>
                </property>
                <property name="bottomMargin">
-                <number>0</number>
+                <number>6</number>
                </property>
                <item>
                 <widget class="QGroupBox" name="groupbox_antennas">
@@ -1329,30 +1579,30 @@
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_3">
                   <property name="leftMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="topMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <property name="bottomMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item>
                    <layout class="QGridLayout" name="antennas">
                     <property name="leftMargin">
-                     <number>1</number>
+                     <number>6</number>
                     </property>
                     <property name="topMargin">
-                     <number>1</number>
+                     <number>6</number>
                     </property>
                     <property name="rightMargin">
-                     <number>0</number>
+                     <number>6</number>
                     </property>
                     <property name="bottomMargin">
-                     <number>0</number>
+                     <number>6</number>
                     </property>
                     <item row="0" column="0">
                      <widget class="QLabel" name="label_title_antennas">
@@ -1378,18 +1628,21 @@
                         <height>50</height>
                        </size>
                       </property>
+                      <property name="flat">
+                       <bool>true</bool>
+                      </property>
                       <layout class="QHBoxLayout" name="ap_number_2">
                        <property name="leftMargin">
-                        <number>1</number>
+                        <number>6</number>
                        </property>
                        <property name="topMargin">
-                        <number>1</number>
+                        <number>6</number>
                        </property>
                        <property name="rightMargin">
-                        <number>0</number>
+                        <number>6</number>
                        </property>
                        <property name="bottomMargin">
-                        <number>0</number>
+                        <number>6</number>
                        </property>
                        <item>
                         <widget class="QLabel" name="label_antennas_ap_number">
@@ -1400,6 +1653,18 @@
                        </item>
                        <item>
                         <widget class="QComboBox" name="comboBox_ap_number">
+                         <property name="minimumSize">
+                          <size>
+                           <width>80</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>70</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
                          <property name="currentIndex">
                           <number>1</number>
                          </property>
@@ -1456,18 +1721,21 @@
                         <height>50</height>
                        </size>
                       </property>
+                      <property name="flat">
+                       <bool>true</bool>
+                      </property>
                       <layout class="QHBoxLayout" name="station_number_2">
                        <property name="leftMargin">
-                        <number>1</number>
+                        <number>6</number>
                        </property>
                        <property name="topMargin">
-                        <number>1</number>
+                        <number>6</number>
                        </property>
                        <property name="rightMargin">
-                        <number>0</number>
+                        <number>6</number>
                        </property>
                        <property name="bottomMargin">
-                        <number>0</number>
+                        <number>6</number>
                        </property>
                        <item>
                         <widget class="QLabel" name="label_antennas_station_number">
@@ -1478,6 +1746,18 @@
                        </item>
                        <item>
                         <widget class="QComboBox" name="comboBox_station_number">
+                         <property name="minimumSize">
+                          <size>
+                           <width>80</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>70</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
                          <property name="currentIndex">
                           <number>1</number>
                          </property>
@@ -1534,18 +1814,21 @@
                         <height>50</height>
                        </size>
                       </property>
+                      <property name="flat">
+                       <bool>true</bool>
+                      </property>
                       <layout class="QHBoxLayout" name="users_number_2">
                        <property name="leftMargin">
-                        <number>1</number>
+                        <number>6</number>
                        </property>
                        <property name="topMargin">
-                        <number>1</number>
+                        <number>6</number>
                        </property>
                        <property name="rightMargin">
-                        <number>0</number>
+                        <number>6</number>
                        </property>
                        <property name="bottomMargin">
-                        <number>0</number>
+                        <number>6</number>
                        </property>
                        <item>
                         <widget class="QLabel" name="label_antennas_users_number">
@@ -1556,6 +1839,18 @@
                        </item>
                        <item>
                         <widget class="QComboBox" name="comboBox_users_number">
+                         <property name="minimumSize">
+                          <size>
+                           <width>80</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>70</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
                          <property name="currentIndex">
                           <number>0</number>
                          </property>
@@ -1608,31 +1903,34 @@
                 <widget class="QGroupBox" name="groupbox_mu_su">
                  <layout class="QGridLayout" name="grid_su">
                   <property name="leftMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="topMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <property name="bottomMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item row="0" column="0">
                    <widget class="QGroupBox" name="groupBox_mu_slider">
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                     <layout class="QVBoxLayout" name="verticalLayout_8">
                      <property name="leftMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="topMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="rightMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <property name="bottomMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <item alignment="Qt::AlignHCenter">
                       <widget class="QLabel" name="label_mu">
@@ -1663,7 +1961,7 @@
                      <item alignment="Qt::AlignHCenter">
                       <widget class="QLineEdit" name="lineEdit_affichage_mu">
                        <property name="text">
-                        <string>% mu</string>
+                        <string>0</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignCenter</set>
@@ -1675,18 +1973,21 @@
                   </item>
                   <item row="0" column="1">
                    <widget class="QGroupBox" name="groupBox_su_slider">
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                     <layout class="QVBoxLayout" name="verticalLayout_9">
                      <property name="leftMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="topMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="rightMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <property name="bottomMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <item alignment="Qt::AlignHCenter">
                       <widget class="QLabel" name="label_su">
@@ -1712,12 +2013,15 @@
                        <property name="maximum">
                         <number>100</number>
                        </property>
+                       <property name="notchTarget">
+                        <double>3.700000000000000</double>
+                       </property>
                       </widget>
                      </item>
                      <item alignment="Qt::AlignHCenter">
                       <widget class="QLineEdit" name="lineEdit_affichage_su">
                        <property name="text">
-                        <string>% su</string>
+                        <string>0</string>
                        </property>
                        <property name="alignment">
                         <set>Qt::AlignCenter</set>
@@ -1732,32 +2036,38 @@
                </item>
                <item>
                 <widget class="QGroupBox" name="groupbox_csi">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>200</height>
+                  </size>
+                 </property>
                  <layout class="QVBoxLayout" name="CSI">
                   <property name="leftMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="topMargin">
-                   <number>1</number>
+                   <number>6</number>
                   </property>
                   <property name="rightMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <property name="bottomMargin">
-                   <number>0</number>
+                   <number>6</number>
                   </property>
                   <item>
                    <layout class="QHBoxLayout" name="csi">
                     <property name="leftMargin">
-                     <number>1</number>
+                     <number>6</number>
                     </property>
                     <property name="topMargin">
-                     <number>1</number>
+                     <number>6</number>
                     </property>
                     <property name="rightMargin">
-                     <number>0</number>
+                     <number>6</number>
                     </property>
                     <property name="bottomMargin">
-                     <number>0</number>
+                     <number>6</number>
                     </property>
                     <item>
                      <widget class="QLabel" name="label_csi_title">
@@ -1775,23 +2085,29 @@
                       </property>
                      </widget>
                     </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_csi">
+                      <property name="minimumSize">
+                       <size>
+                        <width>70</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>70</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>OFF</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
                    </layout>
-                  </item>
-                  <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-                   <widget class="QPushButton" name="pushButton_csi">
-                    <property name="maximumSize">
-                     <size>
-                      <width>60</width>
-                      <height>16777215</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>OFF</string>
-                    </property>
-                    <property name="checkable">
-                     <bool>true</bool>
-                    </property>
-                   </widget>
                   </item>
                   <item>
                    <widget class="QGroupBox" name="groupBox_number_of_csi">
@@ -1801,18 +2117,21 @@
                       <height>50</height>
                      </size>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                     <layout class="QHBoxLayout" name="number_of_csi">
                      <property name="leftMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="topMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="rightMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <property name="bottomMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <item>
                       <widget class="QLabel" name="label_number_of_csi">
@@ -1828,6 +2147,18 @@
                          <horstretch>0</horstretch>
                          <verstretch>0</verstretch>
                         </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>70</width>
+                         <height>16777215</height>
+                        </size>
                        </property>
                        <property name="currentIndex">
                         <number>20</number>
@@ -1950,18 +2281,21 @@
                       <height>50</height>
                      </size>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                     <layout class="QHBoxLayout" name="number_of_ss_for_CSI">
                      <property name="leftMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="topMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="rightMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <property name="bottomMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <item>
                       <widget class="QLabel" name="label_number_of_ss_for_csi">
@@ -1977,6 +2311,18 @@
                          <horstretch>0</horstretch>
                          <verstretch>0</verstretch>
                         </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>70</width>
+                         <height>16777215</height>
+                        </size>
                        </property>
                        <property name="currentIndex">
                         <number>4</number>
@@ -2034,18 +2380,21 @@
                       <height>50</height>
                      </size>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                     <layout class="QHBoxLayout" name="antennas_for_csi">
                      <property name="leftMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="topMargin">
-                      <number>1</number>
+                      <number>6</number>
                      </property>
                      <property name="rightMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <property name="bottomMargin">
-                      <number>0</number>
+                      <number>6</number>
                      </property>
                      <item>
                       <widget class="QLabel" name="label_antennas_for_csi">
@@ -2056,6 +2405,18 @@
                      </item>
                      <item>
                       <widget class="QComboBox" name="comboBox_antennas_csi">
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>70</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
                        <item>
                         <property name="text">
                          <string>1</string>
