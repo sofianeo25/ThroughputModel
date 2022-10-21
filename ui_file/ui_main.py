@@ -160,7 +160,7 @@ class Ui_MainWindow(object):
         self.vertical_3.setObjectName(u"vertical_3")
         self.vertical_trois = QVBoxLayout(self.vertical_3)
         self.vertical_trois.setObjectName(u"vertical_trois")
-        self.vertical_trois.setContentsMargins(6, 6, 6, 6)
+        self.vertical_trois.setContentsMargins(0, 0, 0, 0)
         self.groupbox_dcm = QGroupBox(self.vertical_3)
         self.groupbox_dcm.setObjectName(u"groupbox_dcm")
         self.groupbox_dcm.setMaximumSize(QSize(16777215, 50))
@@ -327,7 +327,7 @@ class Ui_MainWindow(object):
         self.combobox_choice_modulation.addItem("")
         self.combobox_choice_modulation.addItem("")
         self.combobox_choice_modulation.setObjectName(u"combobox_choice_modulation")
-        self.combobox_choice_modulation.setMinimumSize(QSize(70, 0))
+        self.combobox_choice_modulation.setMinimumSize(QSize(80, 0))
         self.combobox_choice_modulation.setMaximumSize(QSize(70, 16777215))
 
         self.choice_modulation_2.addWidget(self.combobox_choice_modulation)
@@ -372,96 +372,11 @@ class Ui_MainWindow(object):
         self.groupbox_wifi_n.setObjectName(u"groupbox_wifi_n")
         self.gridLayout_3 = QGridLayout(self.groupbox_wifi_n)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.gridLayout_3.setContentsMargins(6, 6, 6, 6)
-        self.groupBox_stbc = QGroupBox(self.groupbox_wifi_n)
-        self.groupBox_stbc.setObjectName(u"groupBox_stbc")
-        self.groupBox_stbc.setMaximumSize(QSize(16777215, 50))
-        self.groupBox_stbc.setFlat(True)
-        self.STBC = QHBoxLayout(self.groupBox_stbc)
-        self.STBC.setObjectName(u"STBC")
-        self.STBC.setContentsMargins(6, 6, 6, 6)
-        self.label_stbc = QLabel(self.groupBox_stbc)
-        self.label_stbc.setObjectName(u"label_stbc")
-
-        self.STBC.addWidget(self.label_stbc)
-
-        self.pushButton_stbc = QPushButton(self.groupBox_stbc)
-        self.pushButton_stbc.setObjectName(u"pushButton_stbc")
-        sizePolicy2.setHeightForWidth(self.pushButton_stbc.sizePolicy().hasHeightForWidth())
-        self.pushButton_stbc.setSizePolicy(sizePolicy2)
-        self.pushButton_stbc.setMinimumSize(QSize(70, 0))
-        self.pushButton_stbc.setMaximumSize(QSize(70, 16777215))
-        self.pushButton_stbc.setCheckable(True)
-        self.pushButton_stbc.setChecked(False)
-
-        self.STBC.addWidget(self.pushButton_stbc)
-
-
-        self.gridLayout_3.addWidget(self.groupBox_stbc, 2, 0, 1, 1)
-
-        self.groupBox_ldpc = QGroupBox(self.groupbox_wifi_n)
-        self.groupBox_ldpc.setObjectName(u"groupBox_ldpc")
-        self.groupBox_ldpc.setMaximumSize(QSize(16777215, 50))
-        self.groupBox_ldpc.setFlat(True)
-        self.LDPC = QHBoxLayout(self.groupBox_ldpc)
-        self.LDPC.setObjectName(u"LDPC")
-        self.LDPC.setContentsMargins(6, 6, 6, 6)
-        self.label_ldpc = QLabel(self.groupBox_ldpc)
-        self.label_ldpc.setObjectName(u"label_ldpc")
-
-        self.LDPC.addWidget(self.label_ldpc)
-
-        self.pushButton_ldpc = QPushButton(self.groupBox_ldpc)
-        self.pushButton_ldpc.setObjectName(u"pushButton_ldpc")
-        sizePolicy2.setHeightForWidth(self.pushButton_ldpc.sizePolicy().hasHeightForWidth())
-        self.pushButton_ldpc.setSizePolicy(sizePolicy2)
-        self.pushButton_ldpc.setMinimumSize(QSize(70, 0))
-        self.pushButton_ldpc.setMaximumSize(QSize(70, 16777215))
-        self.pushButton_ldpc.setCheckable(True)
-        self.pushButton_ldpc.setChecked(False)
-
-        self.LDPC.addWidget(self.pushButton_ldpc)
-
-
-        self.gridLayout_3.addWidget(self.groupBox_ldpc, 0, 0, 1, 1)
-
-        self.groupBox_nb_of_ss = QGroupBox(self.groupbox_wifi_n)
-        self.groupBox_nb_of_ss.setObjectName(u"groupBox_nb_of_ss")
-        self.groupBox_nb_of_ss.setMaximumSize(QSize(16777215, 50))
-        self.groupBox_nb_of_ss.setFlat(True)
-        self.groupBox_nb_ss = QHBoxLayout(self.groupBox_nb_of_ss)
-        self.groupBox_nb_ss.setObjectName(u"groupBox_nb_ss")
-        self.groupBox_nb_ss.setContentsMargins(6, 6, 6, 6)
-        self.label_nb_ss = QLabel(self.groupBox_nb_of_ss)
-        self.label_nb_ss.setObjectName(u"label_nb_ss")
-
-        self.groupBox_nb_ss.addWidget(self.label_nb_ss)
-
-        self.comboBox_number_spatial_stream = QComboBox(self.groupBox_nb_of_ss)
-        self.comboBox_number_spatial_stream.addItem("")
-        self.comboBox_number_spatial_stream.addItem("")
-        self.comboBox_number_spatial_stream.addItem("")
-        self.comboBox_number_spatial_stream.addItem("")
-        self.comboBox_number_spatial_stream.setObjectName(u"comboBox_number_spatial_stream")
-        sizePolicy2.setHeightForWidth(self.comboBox_number_spatial_stream.sizePolicy().hasHeightForWidth())
-        self.comboBox_number_spatial_stream.setSizePolicy(sizePolicy2)
-        self.comboBox_number_spatial_stream.setMinimumSize(QSize(80, 0))
-        self.comboBox_number_spatial_stream.setMaximumSize(QSize(70, 16777215))
-
-        self.groupBox_nb_ss.addWidget(self.comboBox_number_spatial_stream)
-
-
-        self.gridLayout_3.addWidget(self.groupBox_nb_of_ss, 1, 0, 1, 1)
-
-        self.groupbox_wifi_n_2 = QGroupBox(self.groupbox_wifi_n)
-        self.groupbox_wifi_n_2.setObjectName(u"groupbox_wifi_n_2")
-        self.verticalLayout_2 = QVBoxLayout(self.groupbox_wifi_n_2)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(6, 6, 6, 6)
-        self.groupBox_greenfield = QGroupBox(self.groupbox_wifi_n_2)
+        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.groupBox_greenfield = QGroupBox(self.groupbox_wifi_n)
         self.groupBox_greenfield.setObjectName(u"groupBox_greenfield")
         self.groupBox_greenfield.setMaximumSize(QSize(16777215, 50))
-        self.groupBox_greenfield.setFlat(True)
+        self.groupBox_greenfield.setFlat(False)
         self.greenfield = QHBoxLayout(self.groupBox_greenfield)
         self.greenfield.setObjectName(u"greenfield")
         self.greenfield.setSizeConstraint(QLayout.SetMinimumSize)
@@ -491,12 +406,12 @@ class Ui_MainWindow(object):
         self.greenfield.addWidget(self.pushButton_greenfield)
 
 
-        self.verticalLayout_2.addWidget(self.groupBox_greenfield)
+        self.gridLayout_3.addWidget(self.groupBox_greenfield, 3, 0, 1, 1)
 
-        self.groupBox_control_preamble = QGroupBox(self.groupbox_wifi_n_2)
+        self.groupBox_control_preamble = QGroupBox(self.groupbox_wifi_n)
         self.groupBox_control_preamble.setObjectName(u"groupBox_control_preamble")
         self.groupBox_control_preamble.setMaximumSize(QSize(16777215, 50))
-        self.groupBox_control_preamble.setFlat(True)
+        self.groupBox_control_preamble.setFlat(False)
         self.control_preamble = QHBoxLayout(self.groupBox_control_preamble)
         self.control_preamble.setObjectName(u"control_preamble")
         self.control_preamble.setSizeConstraint(QLayout.SetMinimumSize)
@@ -518,12 +433,12 @@ class Ui_MainWindow(object):
         self.control_preamble.addWidget(self.pushButton_control_preamble)
 
 
-        self.verticalLayout_2.addWidget(self.groupBox_control_preamble)
+        self.gridLayout_3.addWidget(self.groupBox_control_preamble, 4, 0, 1, 1)
 
-        self.groupBox_txop = QGroupBox(self.groupbox_wifi_n_2)
+        self.groupBox_txop = QGroupBox(self.groupbox_wifi_n)
         self.groupBox_txop.setObjectName(u"groupBox_txop")
         self.groupBox_txop.setMaximumSize(QSize(16777215, 50))
-        self.groupBox_txop.setFlat(True)
+        self.groupBox_txop.setFlat(False)
         self.txop = QHBoxLayout(self.groupBox_txop)
         self.txop.setObjectName(u"txop")
         self.txop.setSizeConstraint(QLayout.SetMinimumSize)
@@ -545,77 +460,19 @@ class Ui_MainWindow(object):
         self.txop.addWidget(self.pushButton_txop)
 
 
-        self.verticalLayout_2.addWidget(self.groupBox_txop)
+        self.gridLayout_3.addWidget(self.groupBox_txop, 5, 0, 1, 1)
 
-
-        self.gridLayout_3.addWidget(self.groupbox_wifi_n_2, 3, 0, 1, 1)
-
-        self.groupbox_sgi = QGroupBox(self.groupbox_wifi_n)
-        self.groupbox_sgi.setObjectName(u"groupbox_sgi")
-        self.groupbox_sgi.setMaximumSize(QSize(16777215, 200))
-        self.groupbox_sgi.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.verticalLayout_6 = QVBoxLayout(self.groupbox_sgi)
-        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
-        self.verticalLayout_6.setContentsMargins(6, 6, 6, 6)
-        self.sgi = QHBoxLayout()
-        self.sgi.setObjectName(u"sgi")
-        self.sgi.setContentsMargins(6, 6, 6, 6)
-        self.label_sgi = QLabel(self.groupbox_sgi)
-        self.label_sgi.setObjectName(u"label_sgi")
-        sizePolicy5.setHeightForWidth(self.label_sgi.sizePolicy().hasHeightForWidth())
-        self.label_sgi.setSizePolicy(sizePolicy5)
-        self.label_sgi.setAlignment(Qt.AlignCenter)
-
-        self.sgi.addWidget(self.label_sgi)
-
-        self.pushButton_sgi = QPushButton(self.groupbox_sgi)
-        self.pushButton_sgi.setObjectName(u"pushButton_sgi")
-        self.pushButton_sgi.setMinimumSize(QSize(70, 0))
-        self.pushButton_sgi.setMaximumSize(QSize(70, 16777215))
-        self.pushButton_sgi.setCheckable(True)
-        self.pushButton_sgi.setChecked(False)
-
-        self.sgi.addWidget(self.pushButton_sgi)
-
-
-        self.verticalLayout_6.addLayout(self.sgi)
-
-        self.groupBox_sgi_dl = QGroupBox(self.groupbox_sgi)
-        self.groupBox_sgi_dl.setObjectName(u"groupBox_sgi_dl")
-        self.groupBox_sgi_dl.setMaximumSize(QSize(16777215, 16777215))
-        self.groupBox_sgi_dl.setFlat(True)
-        self.SGI_DL_2 = QHBoxLayout(self.groupBox_sgi_dl)
-        self.SGI_DL_2.setObjectName(u"SGI_DL_2")
-        self.SGI_DL_2.setContentsMargins(6, 6, 6, 6)
-        self.label_16 = QLabel(self.groupBox_sgi_dl)
-        self.label_16.setObjectName(u"label_16")
-
-        self.SGI_DL_2.addWidget(self.label_16)
-
-        self.comboBox_sgi_dl = QComboBox(self.groupBox_sgi_dl)
-        self.comboBox_sgi_dl.addItem("")
-        self.comboBox_sgi_dl.addItem("")
-        self.comboBox_sgi_dl.addItem("")
-        self.comboBox_sgi_dl.setObjectName(u"comboBox_sgi_dl")
-        self.comboBox_sgi_dl.setMinimumSize(QSize(80, 0))
-        self.comboBox_sgi_dl.setMaximumSize(QSize(70, 16777215))
-
-        self.SGI_DL_2.addWidget(self.comboBox_sgi_dl)
-
-
-        self.verticalLayout_6.addWidget(self.groupBox_sgi_dl)
-
-        self.groupBox_sgi_ul = QGroupBox(self.groupbox_sgi)
+        self.groupBox_sgi_ul = QGroupBox(self.groupbox_wifi_n)
         self.groupBox_sgi_ul.setObjectName(u"groupBox_sgi_ul")
         self.groupBox_sgi_ul.setMaximumSize(QSize(16777215, 16777215))
-        self.groupBox_sgi_ul.setFlat(True)
+        self.groupBox_sgi_ul.setFlat(False)
         self.groupBox = QHBoxLayout(self.groupBox_sgi_ul)
         self.groupBox.setObjectName(u"groupBox")
         self.groupBox.setContentsMargins(6, 6, 6, 6)
-        self.label_18 = QLabel(self.groupBox_sgi_ul)
-        self.label_18.setObjectName(u"label_18")
+        self.label_sgi_ul = QLabel(self.groupBox_sgi_ul)
+        self.label_sgi_ul.setObjectName(u"label_sgi_ul")
 
-        self.groupBox.addWidget(self.label_18)
+        self.groupBox.addWidget(self.label_sgi_ul)
 
         self.comboBox_sgi_ul = QComboBox(self.groupBox_sgi_ul)
         self.comboBox_sgi_ul.addItem("")
@@ -628,10 +485,135 @@ class Ui_MainWindow(object):
         self.groupBox.addWidget(self.comboBox_sgi_ul)
 
 
-        self.verticalLayout_6.addWidget(self.groupBox_sgi_ul)
+        self.gridLayout_3.addWidget(self.groupBox_sgi_ul, 8, 0, 1, 1)
+
+        self.groupBox_sgi_dl = QGroupBox(self.groupbox_wifi_n)
+        self.groupBox_sgi_dl.setObjectName(u"groupBox_sgi_dl")
+        self.groupBox_sgi_dl.setMaximumSize(QSize(16777215, 16777215))
+        self.groupBox_sgi_dl.setFlat(False)
+        self.SGI_DL_2 = QHBoxLayout(self.groupBox_sgi_dl)
+        self.SGI_DL_2.setObjectName(u"SGI_DL_2")
+        self.SGI_DL_2.setContentsMargins(6, 6, 6, 6)
+        self.label_sgi_dl = QLabel(self.groupBox_sgi_dl)
+        self.label_sgi_dl.setObjectName(u"label_sgi_dl")
+
+        self.SGI_DL_2.addWidget(self.label_sgi_dl)
+
+        self.comboBox_sgi_dl = QComboBox(self.groupBox_sgi_dl)
+        self.comboBox_sgi_dl.addItem("")
+        self.comboBox_sgi_dl.addItem("")
+        self.comboBox_sgi_dl.addItem("")
+        self.comboBox_sgi_dl.setObjectName(u"comboBox_sgi_dl")
+        self.comboBox_sgi_dl.setMinimumSize(QSize(80, 0))
+        self.comboBox_sgi_dl.setMaximumSize(QSize(70, 16777215))
+
+        self.SGI_DL_2.addWidget(self.comboBox_sgi_dl)
 
 
-        self.gridLayout_3.addWidget(self.groupbox_sgi, 5, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.groupBox_sgi_dl, 7, 0, 1, 1)
+
+        self.groupBox_ldpc = QGroupBox(self.groupbox_wifi_n)
+        self.groupBox_ldpc.setObjectName(u"groupBox_ldpc")
+        self.groupBox_ldpc.setMaximumSize(QSize(16777215, 50))
+        self.groupBox_ldpc.setFlat(False)
+        self.LDPC = QHBoxLayout(self.groupBox_ldpc)
+        self.LDPC.setObjectName(u"LDPC")
+        self.LDPC.setContentsMargins(6, 6, 6, 6)
+        self.label_ldpc = QLabel(self.groupBox_ldpc)
+        self.label_ldpc.setObjectName(u"label_ldpc")
+
+        self.LDPC.addWidget(self.label_ldpc)
+
+        self.pushButton_ldpc = QPushButton(self.groupBox_ldpc)
+        self.pushButton_ldpc.setObjectName(u"pushButton_ldpc")
+        sizePolicy2.setHeightForWidth(self.pushButton_ldpc.sizePolicy().hasHeightForWidth())
+        self.pushButton_ldpc.setSizePolicy(sizePolicy2)
+        self.pushButton_ldpc.setMinimumSize(QSize(70, 0))
+        self.pushButton_ldpc.setMaximumSize(QSize(70, 16777215))
+        self.pushButton_ldpc.setCheckable(True)
+        self.pushButton_ldpc.setChecked(False)
+
+        self.LDPC.addWidget(self.pushButton_ldpc)
+
+
+        self.gridLayout_3.addWidget(self.groupBox_ldpc, 0, 0, 1, 1)
+
+        self.groupBox_nb_of_ss = QGroupBox(self.groupbox_wifi_n)
+        self.groupBox_nb_of_ss.setObjectName(u"groupBox_nb_of_ss")
+        self.groupBox_nb_of_ss.setMaximumSize(QSize(16777215, 50))
+        self.groupBox_nb_of_ss.setFlat(False)
+        self.groupBox_nb_ss = QHBoxLayout(self.groupBox_nb_of_ss)
+        self.groupBox_nb_ss.setObjectName(u"groupBox_nb_ss")
+        self.groupBox_nb_ss.setContentsMargins(6, 6, 6, 6)
+        self.label_nb_ss = QLabel(self.groupBox_nb_of_ss)
+        self.label_nb_ss.setObjectName(u"label_nb_ss")
+
+        self.groupBox_nb_ss.addWidget(self.label_nb_ss)
+
+        self.comboBox_number_spatial_stream = QComboBox(self.groupBox_nb_of_ss)
+        self.comboBox_number_spatial_stream.addItem("")
+        self.comboBox_number_spatial_stream.addItem("")
+        self.comboBox_number_spatial_stream.addItem("")
+        self.comboBox_number_spatial_stream.addItem("")
+        self.comboBox_number_spatial_stream.setObjectName(u"comboBox_number_spatial_stream")
+        sizePolicy2.setHeightForWidth(self.comboBox_number_spatial_stream.sizePolicy().hasHeightForWidth())
+        self.comboBox_number_spatial_stream.setSizePolicy(sizePolicy2)
+        self.comboBox_number_spatial_stream.setMinimumSize(QSize(80, 0))
+        self.comboBox_number_spatial_stream.setMaximumSize(QSize(70, 16777215))
+
+        self.groupBox_nb_ss.addWidget(self.comboBox_number_spatial_stream)
+
+
+        self.gridLayout_3.addWidget(self.groupBox_nb_of_ss, 1, 0, 1, 1)
+
+        self.groupBox_stbc = QGroupBox(self.groupbox_wifi_n)
+        self.groupBox_stbc.setObjectName(u"groupBox_stbc")
+        self.groupBox_stbc.setMaximumSize(QSize(16777215, 50))
+        self.groupBox_stbc.setFlat(False)
+        self.STBC = QHBoxLayout(self.groupBox_stbc)
+        self.STBC.setObjectName(u"STBC")
+        self.STBC.setContentsMargins(6, 6, 6, 6)
+        self.label_stbc = QLabel(self.groupBox_stbc)
+        self.label_stbc.setObjectName(u"label_stbc")
+
+        self.STBC.addWidget(self.label_stbc)
+
+        self.pushButton_stbc = QPushButton(self.groupBox_stbc)
+        self.pushButton_stbc.setObjectName(u"pushButton_stbc")
+        sizePolicy2.setHeightForWidth(self.pushButton_stbc.sizePolicy().hasHeightForWidth())
+        self.pushButton_stbc.setSizePolicy(sizePolicy2)
+        self.pushButton_stbc.setMinimumSize(QSize(70, 0))
+        self.pushButton_stbc.setMaximumSize(QSize(70, 16777215))
+        self.pushButton_stbc.setCheckable(True)
+        self.pushButton_stbc.setChecked(False)
+
+        self.STBC.addWidget(self.pushButton_stbc)
+
+
+        self.gridLayout_3.addWidget(self.groupBox_stbc, 2, 0, 1, 1)
+
+        self.sgi = QHBoxLayout()
+        self.sgi.setObjectName(u"sgi")
+        self.sgi.setContentsMargins(6, 6, 6, 6)
+        self.label_sgi = QLabel(self.groupbox_wifi_n)
+        self.label_sgi.setObjectName(u"label_sgi")
+        sizePolicy5.setHeightForWidth(self.label_sgi.sizePolicy().hasHeightForWidth())
+        self.label_sgi.setSizePolicy(sizePolicy5)
+        self.label_sgi.setAlignment(Qt.AlignCenter)
+
+        self.sgi.addWidget(self.label_sgi, 0, Qt.AlignLeft)
+
+        self.pushButton_sgi = QPushButton(self.groupbox_wifi_n)
+        self.pushButton_sgi.setObjectName(u"pushButton_sgi")
+        self.pushButton_sgi.setMinimumSize(QSize(70, 0))
+        self.pushButton_sgi.setMaximumSize(QSize(70, 16777215))
+        self.pushButton_sgi.setCheckable(True)
+        self.pushButton_sgi.setChecked(False)
+
+        self.sgi.addWidget(self.pushButton_sgi)
+
+
+        self.gridLayout_3.addLayout(self.sgi, 6, 0, 1, 1)
 
 
         self.vertical_left.addWidget(self.groupbox_wifi_n)
@@ -652,7 +634,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setContentsMargins(6, 6, 6, 6)
         self.antennas = QGridLayout()
         self.antennas.setObjectName(u"antennas")
-        self.antennas.setContentsMargins(6, 6, 6, 6)
+        self.antennas.setContentsMargins(0, 0, 0, 0)
         self.label_title_antennas = QLabel(self.groupbox_antennas)
         self.label_title_antennas.setObjectName(u"label_title_antennas")
         sizePolicy5.setHeightForWidth(self.label_title_antennas.sizePolicy().hasHeightForWidth())
@@ -1352,8 +1334,22 @@ class Ui_MainWindow(object):
         self.comboBox_ctrl_modulation.setItemText(6, QCoreApplication.translate("MainWindow", u"6", None))
         self.comboBox_ctrl_modulation.setItemText(7, QCoreApplication.translate("MainWindow", u"7", None))
 
-        self.label_stbc.setText(QCoreApplication.translate("MainWindow", u"STBC (Space Time Bloc Code)", None))
-        self.pushButton_stbc.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
+        self.label_greenfield.setText(QCoreApplication.translate("MainWindow", u"Greenfield", None))
+        self.pushButton_greenfield.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
+        self.label_control_preamble.setText(QCoreApplication.translate("MainWindow", u"Control preamble", None))
+        self.pushButton_control_preamble.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
+        self.label_txop.setText(QCoreApplication.translate("MainWindow", u"txop", None))
+        self.pushButton_txop.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
+        self.label_sgi_ul.setText(QCoreApplication.translate("MainWindow", u"SGI in UL :", None))
+        self.comboBox_sgi_ul.setItemText(0, QCoreApplication.translate("MainWindow", u"0.8", None))
+        self.comboBox_sgi_ul.setItemText(1, QCoreApplication.translate("MainWindow", u"1.6", None))
+        self.comboBox_sgi_ul.setItemText(2, QCoreApplication.translate("MainWindow", u"3.2", None))
+
+        self.label_sgi_dl.setText(QCoreApplication.translate("MainWindow", u"SGI in DL :", None))
+        self.comboBox_sgi_dl.setItemText(0, QCoreApplication.translate("MainWindow", u"0.8", None))
+        self.comboBox_sgi_dl.setItemText(1, QCoreApplication.translate("MainWindow", u"1.6", None))
+        self.comboBox_sgi_dl.setItemText(2, QCoreApplication.translate("MainWindow", u"3.2", None))
+
         self.label_ldpc.setText(QCoreApplication.translate("MainWindow", u"LDPC (Low Density Parity Check)", None))
         self.pushButton_ldpc.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
         self.label_nb_ss.setText(QCoreApplication.translate("MainWindow", u"Number of spatial stream", None))
@@ -1362,24 +1358,10 @@ class Ui_MainWindow(object):
         self.comboBox_number_spatial_stream.setItemText(2, QCoreApplication.translate("MainWindow", u"3", None))
         self.comboBox_number_spatial_stream.setItemText(3, QCoreApplication.translate("MainWindow", u"4", None))
 
-        self.label_greenfield.setText(QCoreApplication.translate("MainWindow", u"Greenfield", None))
-        self.pushButton_greenfield.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
-        self.label_control_preamble.setText(QCoreApplication.translate("MainWindow", u"Control preamble", None))
-        self.pushButton_control_preamble.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
-        self.label_txop.setText(QCoreApplication.translate("MainWindow", u"txop", None))
-        self.pushButton_txop.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
+        self.label_stbc.setText(QCoreApplication.translate("MainWindow", u"STBC (Space Time Bloc Code)", None))
+        self.pushButton_stbc.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
         self.label_sgi.setText(QCoreApplication.translate("MainWindow", u"SGI (short guard interval)", None))
         self.pushButton_sgi.setText(QCoreApplication.translate("MainWindow", u"OFF", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"SGI in DL :", None))
-        self.comboBox_sgi_dl.setItemText(0, QCoreApplication.translate("MainWindow", u"0.8", None))
-        self.comboBox_sgi_dl.setItemText(1, QCoreApplication.translate("MainWindow", u"1.6", None))
-        self.comboBox_sgi_dl.setItemText(2, QCoreApplication.translate("MainWindow", u"3.2", None))
-
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"SGI in UL :", None))
-        self.comboBox_sgi_ul.setItemText(0, QCoreApplication.translate("MainWindow", u"0.8", None))
-        self.comboBox_sgi_ul.setItemText(1, QCoreApplication.translate("MainWindow", u"1.6", None))
-        self.comboBox_sgi_ul.setItemText(2, QCoreApplication.translate("MainWindow", u"3.2", None))
-
         self.groupbox_antennas.setTitle("")
         self.label_title_antennas.setText(QCoreApplication.translate("MainWindow", u"Antennas", None))
         self.label_antennas_ap_number.setText(QCoreApplication.translate("MainWindow", u"AP number", None))

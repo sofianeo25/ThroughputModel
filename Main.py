@@ -1,4 +1,3 @@
-from PySide6.QtWidgets import QPushButton, QGroupBox
 from core import *
 from core.additional_functions import *
 from ui_file import *
@@ -142,21 +141,21 @@ class Main(QMainWindow, Ui_MainWindow):
         self.comboBox_frequency_band.setEnabled(True)
         self.comboBox_bandwidth.setEnabled(True)
 
+        # récuperer le nom de toutes les groupbox dans une liste
+        list_groupbox = []
         for groupbox in self.findChildren(QGroupBox):
-            self.Header.show()
-            self.groupbox_modulation.show()
-            self.groupbox_ctrl_modulation.show()
-            self.groupbox_sgi.show()
-            self.groupbox_wifi_n.show()
+            list_groupbox.append(groupbox.objectName())
+        print(list_groupbox)
 
-            for groupbox_wifi_n in self.groupbox_wifi_n.findChildren(QGroupBox):
-                groupbox_wifi_n.show()
-
-            if groupbox.objectName() != "Header" and "groupbox_modulation" and "groupbox_ctrl_modulation" and "groupBox_sgi_btn" and "groupbox_wifi_n":
-                groupbox.hide()
-
-            self.groupBox_sgi_dl.hide()
-            self.groupBox_sgi_ul.hide()
+        # parcourir la liste et afficher les groupbox correspondantes
+        for i in list_groupbox:
+            if i == "Header" or i == "groupbox_modulation" or i == "groupbox_ctrl_modulation" or i == "groupbox_wifi_n":
+                self.findChild(QGroupBox, i).show()
+            # parcourir groupbox_wifi_n et afficher tous ses fils sauf groupBox_sgi_dl et groupBox_sgi_ul
+            if i == "groupbox_wifi_n":
+                for groupBox_wifi_n in self.groupbox_wifi_n.findChildren(QGroupBox):
+                    if groupBox_wifi_n.objectName() != "groupBox_sgi_dl" and groupBox_wifi_n.objectName() != "groupBox_sgi_ul":
+                        groupBox_wifi_n.show()
 
     def showMac80211n(self):
         """Show the MAC groupbox menu for 802.11n"""
@@ -201,8 +200,6 @@ class Main(QMainWindow, Ui_MainWindow):
                           "revoir ou vérifier les variables Ldata, LdataTCP, mcs, bf, udp, tcp")
         QMessageBox.about(self, "Information", "adapter le mcs au ax")
 
-        self.pushButton_sgi.setText("OFF")
-
         self.comboBox_frequency_band.setEnabled(True)
         self.comboBox_bandwidth.setEnabled(True)
 
@@ -229,9 +226,9 @@ class Main(QMainWindow, Ui_MainWindow):
     def changeGroupbox(self):
         """Hide or show the groupbox depending on the standard selected"""
         text, list_of_standard = self.getStandardSelection()
-        #Choose wifi standard
+        # Choose wifi standard
         if text == list_of_standard[0]:
-            #hide all groupbox except header
+            # hide all groupbox except header
             for groupbox in self.findChildren(QGroupBox):
                 if groupbox.objectName() != "Header":
                     groupbox.hide()
@@ -265,13 +262,15 @@ class Main(QMainWindow, Ui_MainWindow):
             self.showPhy80211ax()
 
     def showSGI(self):
-        """Show the SGI menu when standard is wifi ax"""
-        if self.pushButton_sgi.isChecked():
-            self.groupBox_sgi_dl.show()
-            self.groupBox_sgi_ul.show()
-        else:
-            self.groupBox_sgi_dl.hide()
-            self.groupBox_sgi_ul.hide()
+        """Show the SGI menu when standard is Wi-Fi ax"""
+        # Show the SGI menu when standard is Wi-Fi ax
+        if self.comboBox_standard_selection.currentText() == "802.11ax":
+            if self.pushButton_sgi.isChecked():
+                self.groupBox_sgi_dl.show()
+                self.groupBox_sgi_ul.show()
+            else:
+                self.groupBox_sgi_dl.hide()
+                self.groupBox_sgi_ul.hide()
 
     def showCSI(self):
         """Show the CSI menu when standard is wifi ax"""
