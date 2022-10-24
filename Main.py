@@ -45,6 +45,7 @@ class Main(QMainWindow, Ui_MainWindow):
         self.tabWidget.currentChanged.connect(self.changeTab)
         self.tabWidget.currentChanged.connect(self.changeGroupbox)
 
+        # Masquer
         for groupbox in self.findChildren(QGroupBox):
             if groupbox.objectName() != "Header":
                 groupbox.hide()
@@ -141,6 +142,13 @@ class Main(QMainWindow, Ui_MainWindow):
         self.comboBox_frequency_band.setEnabled(True)
         self.comboBox_bandwidth.setEnabled(True)
 
+        # si le bouton self.pushButton_sgi est coché (ON) , on le décoche (OFF),
+        if self.pushButton_sgi.isChecked():
+            self.pushButton_sgi.click()
+        # si le bouton self.pushButton_csi est coché (ON) , on le décoche (OFF)
+        if self.pushButton_csi.isChecked():
+            self.pushButton_csi.click()
+
         # récuperer le nom de toutes les groupbox dans une liste
         list_groupbox = []
         for groupbox in self.findChildren(QGroupBox):
@@ -151,11 +159,14 @@ class Main(QMainWindow, Ui_MainWindow):
         for i in list_groupbox:
             if i == "Header" or i == "groupbox_modulation" or i == "groupbox_ctrl_modulation" or i == "groupbox_wifi_n":
                 self.findChild(QGroupBox, i).show()
-            # parcourir groupbox_wifi_n et afficher tous ses fils sauf groupBox_sgi_dl et groupBox_sgi_ul
-            if i == "groupbox_wifi_n":
-                for groupBox_wifi_n in self.groupbox_wifi_n.findChildren(QGroupBox):
-                    if groupBox_wifi_n.objectName() != "groupBox_sgi_dl" and groupBox_wifi_n.objectName() != "groupBox_sgi_ul":
-                        groupBox_wifi_n.show()
+            else:
+                self.findChild(QGroupBox, i).hide()
+
+        for groupBox_wifi_n in self.groupbox_wifi_n.findChildren(QGroupBox):
+            if groupBox_wifi_n.objectName() != "groupBox_sgi_dl" and groupBox_wifi_n.objectName() != "groupBox_sgi_ul":
+                groupBox_wifi_n.show()
+            else:
+                groupBox_wifi_n.hide()
 
     def showMac80211n(self):
         """Show the MAC groupbox menu for 802.11n"""
@@ -182,7 +193,6 @@ class Main(QMainWindow, Ui_MainWindow):
                 groupbox.hide()
 
         self.comboBox_frequency_band.removeItem(3)
-        self.comboBox_frequency_band.setEnabled(True)
         self.comboBox_bandwidth.setEnabled(True)
 
         self.comboBox_frequency_band.setCurrentText("5 GHz")
@@ -202,6 +212,10 @@ class Main(QMainWindow, Ui_MainWindow):
 
         self.comboBox_frequency_band.setEnabled(True)
         self.comboBox_bandwidth.setEnabled(True)
+
+        # si le bouton self.pushButton_sgi est coché (ON) , on le décoche (OFF)
+        if self.pushButton_sgi.isChecked():
+            self.pushButton_sgi.click()
 
         for groupbox in self.findChildren(QGroupBox):
             groupbox.show()
@@ -226,7 +240,7 @@ class Main(QMainWindow, Ui_MainWindow):
     def changeGroupbox(self):
         """Hide or show the groupbox depending on the standard selected"""
         text, list_of_standard = self.getStandardSelection()
-        # Choose wifi standard
+        # Choose Wi-Fi standard
         if text == list_of_standard[0]:
             # hide all groupbox except header
             for groupbox in self.findChildren(QGroupBox):
@@ -264,24 +278,24 @@ class Main(QMainWindow, Ui_MainWindow):
     def showSGI(self):
         """Show the SGI menu when standard is Wi-Fi ax"""
         # Show the SGI menu when standard is Wi-Fi ax
+        self.groupBox_sgi_dl.hide()
+        self.groupBox_sgi_ul.hide()
+
         if self.comboBox_standard_selection.currentText() == "802.11ax":
             if self.pushButton_sgi.isChecked():
                 self.groupBox_sgi_dl.show()
                 self.groupBox_sgi_ul.show()
-            else:
-                self.groupBox_sgi_dl.hide()
-                self.groupBox_sgi_ul.hide()
 
     def showCSI(self):
-        """Show the CSI menu when standard is wifi ax"""
+        """Show the CSI menu when standard is Wi-Fi ax"""
+        self.groupBox_number_of_csi.hide()
+        self.groupBox_number_of_ss_for_CSI.hide()
+        self.groupBox_antennas_for_csi.hide()
+
         if self.pushButton_csi.isChecked():
             self.groupBox_number_of_csi.show()
             self.groupBox_number_of_ss_for_CSI.show()
             self.groupBox_antennas_for_csi.show()
-        else:
-            self.groupBox_number_of_csi.hide()
-            self.groupBox_number_of_ss_for_CSI.hide()
-            self.groupBox_antennas_for_csi.hide()
 
     def mu_slider_value_changed(self):
         """Get the value of the slider and display it in the label"""
@@ -308,14 +322,13 @@ class Main(QMainWindow, Ui_MainWindow):
         self.su_slider.setValue(su_value)
 
     def hide_spacer(self):
-        """Hide or show spacer depending """
+        """Hide or show spacer depending on standard selected"""
         text, list_of_standard = self.getStandardSelection()
-        for i in range(1, 3):
-            if text == list_of_standard[i]:
-                self.vertical_left.addItem(self.verticalSpacer)
-        for i in range(4, 6):
-            if text == list_of_standard[i]:
-                self.vertical_left.removeItem(self.verticalSpacer)
+        # si le text est wifi a ou b ou g, on add le spacer
+        if text == list_of_standard[1] or text == list_of_standard[2] or text == list_of_standard[3]:
+            self.vertical_left.addItem(self.verticalSpacer)
+        else:
+            self.vertical_left.removeItem(self.verticalSpacer)
 
     def btn_txt(self):
         """Change the text of the button to ON or OFF"""
